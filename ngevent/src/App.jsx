@@ -4,6 +4,7 @@ import './App.css'
 function App() {
   return ( 
     <>
+    {/* login */}
         <section class="bg-gray-50" id="login-section">
             <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
                 <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
@@ -25,7 +26,7 @@ function App() {
             </div>
         </section>
 
-
+{/* register */}
              <section class="bg-gray-50" id="register-section">
                 <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
                 <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
@@ -100,6 +101,23 @@ function App() {
                 </div>
                 </div>
             </section> 
+
+
+    <section>
+      <div id="background-img"></div>
+      <div class="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 mx-auto">
+        <div class="max-w-[2000px] gap-8 flex items-center">
+          <h2 class="text-3xl font-bold sm:text-4xl text-[#176B87]">Products</h2>
+          {/* <SearchBar /> */}
+        </div>
+        <p v-if="gadgets.length === 0" class="text-xl text-center mt-16">No matching product</p>
+        <div
+          class="mt-8 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 md:gap-4 lg:grid-cols-3 justify-items-center"
+        >
+          {/* <GadgetCard v-for="gadget in gadgets" :key="gadget.id" :gadget="gadget" /> */}
+        </div>
+      </div>
+    </section>
     </>
     )
 }
