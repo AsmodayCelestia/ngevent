@@ -10,15 +10,15 @@ Silahkan setup project aplikasi kamu:
 - [ ] Membuat layout aplikasi sesuai tema yang dipilih
 - [ ] Membuat initial data/seeder sesuai struktur data yang ditentukan (Kalian bisa check `db.json` sebagai referensi atau bisa digunakan sebagai data awal)
   - [ ] Halaman auth
-    - [ ] Register
-    - [ ] Login
+    - [x] Register
+    - [x] Login
   - [ ] Halaman home
-    - [ ] Komponen Banner
-    - [ ] Komponen Detail info Ecommerce
-    - [ ] Komponen Featured Product (50-10 product) + “see-all”
+    - [x] Komponen Banner
+    - [x] Komponen Detail info Ecommerce
+    - [x] Komponen Featured Product (50-10 product) + “see-all”
   - [ ] Halaman product
-    - [ ] Komponen List Product
-    - [ ] Komponen Search
+    - [x] Komponen List Product
+    - [x] Komponen Search
     - [ ] Komponen Pagination
     - [ ] Komponen Add to wishlist
   - [ ] Halaman detail product
