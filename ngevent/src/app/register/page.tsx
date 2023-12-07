@@ -14,7 +14,7 @@ export default function Register() {
               htmlFor="name"
               className="block mb-2 text-sm font-medium text-gray-900"
             >
-              Name
+              Username
             </label>
             <input
               type="text"
@@ -39,7 +39,7 @@ export default function Register() {
               autoComplete="off"
             />
           </div>
-          <div>
+          {/* <div>
             <label
               htmlFor="phone-number"
               className="block mb-2 text-sm font-medium text-gray-900"
@@ -53,7 +53,7 @@ export default function Register() {
               placeholder="Enter your phone-number ..."
               autoComplete="off"
             />
-          </div>
+          </div> */}
           <div>
             <label
               htmlFor="password"

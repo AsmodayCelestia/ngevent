@@ -19,6 +19,7 @@ export type UserModel = {
 }
 
 export type Register = {
+    name: string;
     username: string;
     email: string;
     password: string;
@@ -49,10 +50,13 @@ export const createUser = async (data:Register) =>{
     const db = await getDb()
     const modifiedUser: Register = {
         ...data,
+        name: data.username,
         password: hashText(data.password)
     }
+    console.log(modifiedUser);
+    
     const register = await db.
         collection('users').
-        insertOne({modifiedUser}) 
+        insertOne(modifiedUser) 
     return register
 }
