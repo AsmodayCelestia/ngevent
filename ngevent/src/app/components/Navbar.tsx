@@ -35,6 +35,15 @@ export default function navbar(){
                     <li>
                         <Link href="/register" >Register</Link>
                     </li>
+                    <li>
+                        <Link href="/wishlist" >Wishlist</Link>
+                    </li>
+                    <li>
+                        <Link href="/detail" >Detail</Link>
+                    </li>
+                    <li>
+                        <Link href="/products" >Product</Link>
+                    </li>
                     </ul>
                 </div>
                 <div className="navbar-end">

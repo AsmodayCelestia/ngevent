@@ -3,301 +3,321 @@
   "wishlist": [],
   "products": [
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Whisnu Santika",
+      "slug": "wisnu-santika",
+      "description": "Get ready to celebrate the New Year with an unforgettable party at Wisnu Santika Holywings! Join us for a night of fun, music, and delicious food. Don't miss out on this incredible event.",
+      "excerpt": "Whisnu Santika Holywings New Year Party",
+      "price": 500000,
+      "tags":["NewYear", "Party", "Whisnu Santika"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/12/1/402513f3-5b68-4c46-952d-650a066f91b2.webp",
       "images": [
-
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/W_GATSU.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/299dcdee-8abd-4ad4-9b91-585d92df0452.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/43c469f2-0043-4b20-8554-aeda9414f110.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Java Jazz Festival",
+      "slug": "java-jazz-festival",
+      "description": "The Java Jazz Festival is one of the largest jazz festivals in the world, held annually in Jakarta, Indonesia. Find out more about this prestigious event and discover the lineup and ticket information for the next festival",
+      "excerpt": "Java Jazz Festival One of Largest Festival in Jakarta",
+      "price": 500000,
+      "tags": ["Jakarta", "Party", "Java Jazz Festival"],
+      "thumbnail": "https://www.javajazzfestival.com/images/logo-l.svg",
       "images": [
-        
+        "https://www.nowjakarta.co.id/wp-content/uploads/2023/04/Java-Jazz-Festival-2023.jpg",
+        "https://imgsrv2.voi.id/dftKxhryQ5IAK0mAC5VGW2ariNX1gY9lcxVEeLkxNYM/auto/1200/675/sm/1/bG9jYWw6Ly8vcHVibGlzaGVycy8zMzQyMTcvMjAyMzExMjkxMzIzLW1vYmlsZS5jcm9wcGVkXzE3MDEyMzkwNTIuanBlZw.jpg",
+        "https://www.javajazzfestival.com/images/gallery/20l.jpg"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Djakarta Warehouse Project",
+      "slug": "djakarta-warehouse-project",
+      "description": "Djakarta Warehouse Project (DWP) 2023 is an annual electronic dance music festival held in Jakarta, Indonesia. Get all the information about the festival lineup, tickets, and highlights in this comprehensive guide.",
+      "excerpt": "Djakarta Warehouse Project 2023 electronic dance music festival",
+      "price": 2000000,
+      "tags": ["Jakarta", "Party", "Djakarta Warehouse Project"],
+      "thumbnail": "https://dwp2020.oss-ap-southeast-5.aliyuncs.com/app/uploads/2023/12/IMG_1160.jpeg",
       "images": [
-
+        "https://www.nme.com/wp-content/uploads/2022/06/dwp-2019@2000x1270-696x442.jpg",
+        "https://images.squarespace-cdn.com/content/v1/584f805a37c581235a9aee6b/1576579410143-UM5D5WVQTRZ9DSHKYDJB/2019-12-14+DWP+19+Day+2+-+Elrow+Stage-2101.jpg",
+        "https://i0.wp.com/weownthenitenyc.com/wp-content/uploads/2018/12/We-Own-The-Nite-NYC_DWPX_2018_Bali_Ismaya-Live_Djakarta-Warehouse-Project-X_.jpg?fit=1600%2C1066&ssl=1"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Ultra Bali",
+      "slug": "ultra-bali",
+      "description": "Ultra Bali is an annual electronic dance music festival held in Jakarta, Indonesia. Get all the information about the festival lineup, tickets, and highlights in this comprehensive guide.",
+      "excerpt": "Ultra Bali electronic dance music festival",
+      "price": 2000000,
+      "tags": ["Bali", "Party", "Ultra Bali"],
+      "thumbnail": "https://ultrabali.com/wp-content/uploads/2023/09/RESISTANCE-BALI-2023-BILLING-IG-POST.png",
       "images": [
-        
+        "https://hardrockfm.com/wp-content/uploads/2023/09/bali-og-1.jpeg",
+        "https://coconuts.co/wp-content/uploads/2022/09/21980248_882901491862628_7027109672179990528_n.jpg",
+        "https://www.asiadreams.com/wp-content/uploads/bali-gallery-2017-1.jpg"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Erga",
+      "slug": "erga",
+      "description": "Join the ultimate Erga Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "Erga Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Jakarta", "Party", "Erga"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/29/1d0f14f0-26ac-45ba-bc73-b130c5b77fd5.webp",
       "images": [
-
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/93e60aa4-a1ac-437a-ba63-cdfc35d00ec5.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/d7d9a6e1-5a90-4529-9a6c-ae5ad5cd6c1b.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_BEKASI.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Yoren Gatsu",
+      "slug": "yoren-gatsu",
+      "description": "Join the ultimate Yoren Gatsu Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "Yoren Gatsu Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Holywings", "Party", "Yoren"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/21/52cb5a67-fbb7-4259-b0d7-e5d13b0659e5.webp",
       "images": [
-        
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/9f2bd6ae-674a-4e36-9c88-cfca067d734f.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_CENTRAL_PARK.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/fd70e2e8-a899-4d18-b1bf-8f42dc77b10f.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Judika Axin",
+      "slug": "judika-axin",
+      "description": "Join the ultimate Judika Axin Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "Judika Axin Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Bali", "Party", "Judika"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/13/e771838d-e68d-4966-93f7-456b7dc902d6.webp",
       "images": [
-
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/f52f18bc-1038-4de3-b913-83c87254e883.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_SENAYAN.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_PIK.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Volt",
+      "slug": "volt",
+      "description": "Join the ultimate Volt Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "Volt Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Holywings", "Party", "Volt"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/21/bf46a2b5-051b-4619-8a10-cc37a551f39c.webp",
       "images": [
-        
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/8/30/97508ebf-5400-4907-bc39-dd9ea1216b16.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_MANADO.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/1a0a464b-b45a-4ad1-bd89-137262836210.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Vierratale",
+      "slug": "vierratale",
+      "description": "Join the ultimate Vierratale Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "Vierratale Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Holywings", "Party", "Vierratale"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/17/2128aa93-e976-4850-b2cc-ecaf8f883805.webp",
       "images": [
-
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/W_GATSU.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_PIK.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_SEMARANG.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "P.Joana",
+      "slug": "p.joana",
+      "description": "Join the ultimate P.Joana Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "P.Joana Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Holywings", "Party", "Volt"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/14/ed2870fd-729d-4041-bf9a-29879f8b4783.webp",
       "images": [
-        
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/229a8a75-7a4a-4bbe-b5a9-03dd64ffe61c.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_SEMARANG.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_PIK.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Adnan Veron",
+      "slug": "adnan-veron",
+      "description": "Join the ultimate Adnan Veron Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "Adnan Veron Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Holywings", "Party", "Adnan Veron"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/22/a0942917-77c8-47a1-9d3f-489d703a1519.webp",
       "images": [
-
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/229a8a75-7a4a-4bbe-b5a9-03dd64ffe61c.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/8/30/ae2af97e-23a0-4c13-8628-9a4c7addcff4.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_PALEMBANG.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Yoren Yogyakarta",
+      "slug": "yoren-yogyakarta",
+      "description": "Join the ultimate Yoren Yogyakarta Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "Yoren Yogyakarta Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Holywings", "Party", "Yoren Yogyakarta"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/14/a9e5ab4a-b160-49a7-81c3-338a9a19e33a.webp",
       "images": [
-        
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/9f2bd6ae-674a-4e36-9c88-cfca067d734f.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/d7d9a6e1-5a90-4529-9a6c-ae5ad5cd6c1b.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/43c469f2-0043-4b20-8554-aeda9414f110.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
+      "name": "Yasmin",
+      "slug": "yasmin",
       "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "excerpt": "Yasmin Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Holywings", "Party", "Yasmin"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/16/62f805a7-3201-4b11-a50c-7309d9c426eb.webp",
       "images": [
-
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/f52f18bc-1038-4de3-b913-83c87254e883.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_PALEMBANG.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_SEMARANG.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Brett Allen",
+      "slug": "brett-allen",
+      "description": "Join the ultimate Brett Allen Yogyakarta Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "Brett Allen Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Holywings", "Party", "Brett Allen"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/22/8aeda76c-e148-4225-a6cb-aaaa8bd98827.webp",
       "images": [
-        
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/bc184a66-9daa-48e1-967b-a312c0cc3bdc.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/89e1302d-6dd9-41fb-ba4a-57a07710732c.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_PALEMBANG.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Nikki Frazetta",
+      "slug": "nikkoi-frazetta",
+      "description": "Join the ultimate Nikki Frazetta Yogyakarta Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "Nikki Frazetta Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Holywings", "Party", "Nikki Frazetta"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/22/1f665cb3-c55b-4d21-be3b-3cb66a63ba0e.webp",
       "images": [
-
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_JOGJA.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/06745d02-05c0-4418-8a3d-4f680e1109b7.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_PIK.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Patricia Schuldtz",
+      "slug": "patricia-schuldtz",
+      "description": "Join the ultimate Patricia Schuldtz Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "Patricia Schuldtz Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Holywings", "Party", "Patricia Schuldtz"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/21/e4253d84-9365-45a6-be43-eb04df150536.webp",
       "images": [
-        
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/8/30/97508ebf-5400-4907-bc39-dd9ea1216b16.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_MANADO.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/1a0a464b-b45a-4ad1-bd89-137262836210.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Andra & The BackBone",
+      "slug": "andra-&-the-backbone",
+      "description": "Join the ultimate Andra & The BackBone Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "Andra & The BackBone Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Holywings", "Party", "Andra & The BackBone"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/16/c0ebd4b9-d880-4e3a-a1a1-87c8d8add952.webp",
       "images": [
-
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/W_MAG.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_SEMARANG.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/43c469f2-0043-4b20-8554-aeda9414f110.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Jesse Wilde",
+      "slug": "jesse-wilde",
+      "description": "Join the ultimate Jesse Wilde Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "Jesse Wilde Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Holywings", "Party", "Jesse Wilde"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/27/c47ab3b6-6860-4b3a-89dd-fdd2fffe334c.webp",
       "images": [
-        
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/bc184a66-9daa-48e1-967b-a312c0cc3bdc.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_QBIG.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_PALEMBANG.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Lenn",
+      "slug": "lenn",
+      "description": "Join the ultimate Lenn Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "Lenn Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Holywings", "Party", "Lenn"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/28/e101c7ef-2245-4f1b-82d6-9d0ae2864d3e.webp",
       "images": [
-
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/f52f18bc-1038-4de3-b913-83c87254e883.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/8/30/ae2af97e-23a0-4c13-8628-9a4c7addcff4.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/fd70e2e8-a899-4d18-b1bf-8f42dc77b10f.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"
     },
     {
-      "name": "",
-      "slug": "New Year Concert",
-      "description": "",
-      "excerpt": "",
-      "price": 5000000,
-      "tags": "",
-      "thumbnail": "https://loremflickr.com/400/400/nightlife",
-      "desc": "",
+      "name": "Sammy Simorangkir",
+      "slug": "sammy-simorangkir",
+      "description": "Join the ultimate Sammy Simorangkir Holywings Party and experience a night of delicious food, live music, and unforgettable entertainment. Get ready to indulge in the best wings in town and dance the night away at this exclusive event. Don't miss out on the ultimate party experience at Holywings!",
+      "excerpt": "Sammy Simorangkir Holywings Party Live Music",
+      "price": 500000,
+      "tags": ["Holywings", "Party", "Sammy Simorangkir"],
+      "thumbnail": "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/events/2023/11/20/4ef49e54-517d-49f1-8609-b18c45fc7a36.webp",
       "images": [
-        
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/8/30/97508ebf-5400-4907-bc39-dd9ea1216b16.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/6/26/43c469f2-0043-4b20-8554-aeda9414f110.webp",
+        "https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/outlet_image/2023/7/14/GD_PIK.webp"
       ],
       "createdAt": "2023-12-15T15:32:06.350Z",
       "updatedAt": "2024-03-18T14:47:12.101Z"

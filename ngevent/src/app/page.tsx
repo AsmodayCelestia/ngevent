@@ -1,5 +1,6 @@
 import Image from 'next/image'
-
+import Link from 'next/link'
+import Head from 'next/head';
 
 export default function Home() {
   return (
@@ -165,9 +166,10 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-center mt-10">
-        <button className="w-200 text-white bg-[#176B87] hover:bg-[#04364A] font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-          See More
-        </button>
+          <Link href="/products" >        
+            <button className="w-200 text-white bg-[#176B87] hover:bg-[#04364A] font-medium rounded-lg text-sm px-5 py-2.5 text-center">See More</button>
+          </Link>
+
       </div>
     </section>
     {/* header */}
@@ -222,3 +224,6 @@ export default function Home() {
 </>
   )
 }
+
+
+

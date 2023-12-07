@@ -1,48 +1,7 @@
-// import ProductCard, { Product } from '../components/productCard'
-
-// async function getProducts(): Promise<Product[]>{
-//     const response = await fetch ('http://localhost:3000/products')
-//     const data = await response.json()
-//     return data
-// }
-
-
-export default function Products(){
-    // const products = await getProducts()
+export default function Wishlist() {
     return (
-        <>
-            <div id="background-img"></div>
-            {/* <div className="max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 mx-auto">
-                {products.map(product =>{
-                    return <ProductCard product={product}/>
-                })}
-            </div> */}
-            <div className="max-w-[2000px] gap-8 flex items-center">
-                <h2 className="text-3xl font-bold sm:text-4xl text-[#176B87]">Products</h2>
-                {/* <SearchBar /> */}
-                <form className="  w-full border-2 rounded ">
-                    <div className="flex">
-                    <div className="relative h-[45px] w-full">
-                        <input
-                        className="w-full h-full p-4"
-                        type="search"
-                        id="search-dropdown"
-                        placeholder="Search by name"
-                        />
-                        <button
-                        type="submit"
-                        className="absolute top-0 right-0 px-4 text-sm font-medium h-full text-white bg-[#176B87] hover:opacity-60 transition-opacity duration-100 rounded-r-lg hover:bg-[#04364A]"
-                        >
-                        <i className="fa-solid fa-magnifying-glass"></i>
-                        <span className="sr-only">Search</span>
-                        </button>
-                    </div>
-                    </div>
-                </form>
-                {/* search */} 
-            </div>
-            <p className="text-xl text-center mt-16">No matching product</p>
-            <div className="mt-8 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 md:gap-4 lg:grid-cols-3 justify-items-center">
+      <>
+                    <div className="mt-8 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 md:gap-4 lg:grid-cols-3 justify-items-center">
                 {/* <GadgetCard /> */}
                 <div
                     className="shadow-lg border border-[#DAFFFB] bg-white rounded-lg flex items-start cursor-pointer mb-10"
@@ -61,7 +20,7 @@ export default function Products(){
                     <div className="relative p-5">
                         <h3
                         className="font-bold text-2xl text-gray-700 group-hover:underline group-hover:underline-offset-4"
-                        >hello
+                        >
                         {/* {{ gadget.name }} */}
                         </h3>
                         {/* <span
@@ -88,6 +47,7 @@ export default function Products(){
                 </div>
                 {/* GadgetCard */}
             </div>
-        </>
+      </>
     )
 }
+
