@@ -1,4 +1,4 @@
-import { getUserId } from "@/db/models/user"
+import { getUserId } from "@/db/models/users"
 
 export async function GET(
     request: Request,
