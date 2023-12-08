@@ -34,12 +34,12 @@ export const getWishId = async (slug:string) =>{
 
 export const createWish = async (data:Wish) =>{
     const db = await getDb()
-    // const modifiedUser: Wish= {
-    //     ...data,
-    //     name: data.username,
-    //     password: hashText(data.password)
-    // }
-    // console.log(modifiedUser);
+    const modifiedWish: Wish= {
+        ...data,
+        // name: data.username,
+        // password: hashText(data.password)
+    }
+    console.log(modifiedWish);
     
     const wish = await db.
         collection('wishlists').

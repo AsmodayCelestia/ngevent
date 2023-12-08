@@ -79,9 +79,9 @@ Implementasikan CSR dan SSR pada pada halaman-halaman dan komponen-komponen yang
 - [ ] Install MongoDB database pada komputer kamu atau menggunakan MongoDB Atlas
 - [ ] Lakukan wiring dan validasi terhadap halaman-halaman dan komponen-komponen yang sudah dibuat.
   - [ ] Halaman register: /register
-    - [ ] username:string (validation: required, unique)
-    - [ ] email:string  (validation: required, unique, email format)
-    - [ ] password:string  (validation: required, length min 5)
+    - [x] username:string (validation: required, unique)
+    - [x] email:string  (validation: required, unique, email format)
+    - [x] password:string  (validation: required, length min 5)
   - [ ] Halaman login: /login
     - [ ] email:string  (validation: required, email format)
     - [ ] password:string  (validation: required)

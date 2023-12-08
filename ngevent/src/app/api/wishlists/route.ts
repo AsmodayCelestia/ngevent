@@ -32,7 +32,7 @@ export async function POST(request: Request) {
         const wishNew = await createWish(data)
         return Response.json({
             statusCode: 201,
-            message: "message from post /api/users",
+            message: "message from post /api/wishlists",
             data: wishNew
         }, {
             status: 201

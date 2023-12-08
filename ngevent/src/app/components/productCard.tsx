@@ -1,7 +1,9 @@
+'use client'
 import React from 'react';
 // import { useRouter } from 'next/router'; // Import from next/router, not next/navigation
 import { BsBookmarkStarFill } from 'react-icons/bs';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export interface Product {
   _id: string;
@@ -18,17 +20,22 @@ export interface Product {
 }
 
 export default function ProductCard({ product }: { product: Product }) {
-//   const navigate = useRouter();
+    const [wishlist, setWishlist] = useState<string[]>([]);
 
-//   const handleCardClick = (e: React.MouseEvent<HTMLDivElement>) => {
-//     e.preventDefault();
-//     navigate.push(`/products/${product.slug}`);
-//   };
+    const handleBookmarkClick = (e: React.MouseEvent<SVGElement>) => {
+      e.preventDefault();
+      
+      // Check if the product is already in the wishlist
+      if (!wishlist.includes(product._id)) {
+          // If not, add it to the wishlist
+          setWishlist([...wishlist, product._id]);
+        }
+        console.log(wishlist);
+    };
 
   return (
     <>
       <Link href={`/products/${product.slug}`}>
-        {/* <a onClick={handleCardClick}> */}
           <div className="shadow-lg border border-[#DAFFFB] min-w-[50vh] bg-white rounded-lg relative overflow-hidden group cursor-pointer mb-2">
             <img
               alt={product.name}
@@ -36,11 +43,11 @@ export default function ProductCard({ product }: { product: Product }) {
               className="h-[200px] w-full object-contain transition-transform duration-500 group-hover:scale-110 sm:h-[50vh]"
             />
             {/* Icon in the top-right corner */}
-            <div className="absolute top-2 right-2">
+            <div className="absolute top-2 right-2" style={{ cursor: 'pointer' }}>
                 <BsBookmarkStarFill className="w-8 h-8" color="#176B87" />
             </div>
+
           </div>
-        {/* </a> */}
       </Link>
     </>
   );

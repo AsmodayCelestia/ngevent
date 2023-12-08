@@ -46,6 +46,14 @@ export const getUserId = async (id:string) =>{
     return userById
 }
 
+export const getUserEmail = async (email:string) =>{
+    const db = await getDb()
+    const userByEmail = (await db.
+        collection('users').
+        findOne({email: email})) as UserModel
+    return userByEmail
+}
+
 export const createUser = async (data:Register) =>{
     const db = await getDb()
     const modifiedUser: Register = {
