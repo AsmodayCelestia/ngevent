@@ -13,7 +13,6 @@ export default function Register() {
     const username = formData.get('username')
     const email = formData.get('email')
     const password = formData.get('password')
-    console.log(username, email, password);
     const response= await fetch(
       "http://localhost:3000/api/users/register",
       {
@@ -28,10 +27,8 @@ export default function Register() {
         })
       }
     )
-    console.log(response);
     
     const result =(await response.json() ) as MyResponse
-    console.log(result,'rrrrr');
     
     if(!response.ok) {
       return redirect('/register?error=' + result.message)

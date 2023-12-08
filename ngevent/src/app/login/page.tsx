@@ -1,14 +1,52 @@
+import { redirect } from "next/navigation"
+import Link from "next/link"
+import ClientFlashComponent from "../components/ClientFlashComponent";
+// import { MyResponse } from "../register/page";
+
+export type MyResponse<T = {}> =  {
+  message?: string;
+  data?: T;
+}
+
 export default function Login() {
+  const handleLogin =async (formData:FormData) => {
+    "use server"
+    const email = formData.get("email")
+    const password = formData.get("password")
+    console.log(email, password);
+    
+    const response= await fetch(
+      "http://localhost:3000/api/users/login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },        
+        body: JSON.stringify({
+          email,
+          password
+        })
+      }
+    )
+    
+    const result =(await response.json() ) as MyResponse
+    
+    if(!response.ok) {
+      return redirect('/login?error=' + result.message)
+    }
+    return redirect('/')
+  }
     return (
       <>
         <section className="bg-black" id="login-section">
   <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
     <div className="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
+    <ClientFlashComponent />
       <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
         <h1 className="text-xl text-center font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
           Sign in to your account
         </h1>
-        <form className="space-y-4 md:space-y-6">
+        <form className="space-y-4 md:space-y-6" action={handleLogin}>
           <div>
             <label
               htmlFor="email"
@@ -17,8 +55,9 @@ export default function Login() {
               Your email
             </label>
             <input
+              name="email"
               type="email"
-              id="register-email"
+              id="email"
               className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
               placeholder="name@company.com"
               autoComplete="off"
@@ -33,8 +72,9 @@ export default function Login() {
               Password
             </label>
             <input
+              name= "password"
               type="password"
-              id="register-password"
+              id="password"
               placeholder="••••••••"
               className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
               autoComplete="off"

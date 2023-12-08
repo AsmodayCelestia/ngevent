@@ -59,7 +59,7 @@ Implementasikan CSR dan SSR pada pada halaman-halaman dan komponen-komponen yang
 - [x] Halaman register: /register
 - [x] Halaman login: /login
 - [x] Halaman home: / (SSR)
-- [ ] Halaman product: /products (CSR)
+- [x] Halaman product: /products (CSR)
   - [x] Komponen List Product (CSR)
   - [x] Komponen Search (CSR)
   - [ ] Komponen Pagination (CSR)
