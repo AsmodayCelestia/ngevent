@@ -31,11 +31,11 @@ export const getAllProduct = async () =>{
     return products
 }
 
-export const getProductId = async (id:string) =>{
+export const getProductId = async (slug:string) =>{
     const db = await getDb()
-    const objectId = new ObjectId(id)
+    // const objectId = new ObjectId(id)
     const userById = (await db.
         collection('products').
-        findOne({_id: objectId})) as Product
+        findOne({slug})) as Product
     return userById
 }

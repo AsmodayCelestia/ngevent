@@ -2,15 +2,7 @@
 import ProductCard, { Product } from '../components/productCard'
 import { useEffect } from 'react'
 import { useState } from 'react'
-
-async function getProducts(): Promise<Product[]>{
-    const response = await fetch ('http://localhost:3000/api/products',{
-        method: "GET",
-        cache: 'no-store'
-    })
-    const data = await response.json()
-    return data
-}
+import Link from 'next/link'
 
 export default function Products(){
     const [products, setProducts] = useState<Product[]>([])
@@ -60,7 +52,11 @@ export default function Products(){
             <div className="max-w-screen-xl px-4 sm:px-6 lg:px-8 mx-auto">
                 <div className="mt-3 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 md:gap-4 lg:grid-cols-3 justify-items-center">
                     {products.map(product =>{
-                        return <ProductCard key={product.slug} product={product}/>
+                        return ( 
+                        <Link href={`/products/${product.slug}`}>
+                            <ProductCard key={product.slug} product={product}/>
+                        </Link>
+                        )
                     })}
                 </div>
             </div>

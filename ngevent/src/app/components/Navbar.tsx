@@ -39,9 +39,6 @@ export default function navbar(){
                         <Link href="/wishlist" >Wishlist</Link>
                     </li>
                     <li>
-                        <Link href="/detail" >Detail</Link>
-                    </li>
-                    <li>
                         <Link href="/products" >Product</Link>
                     </li>
                     </ul>

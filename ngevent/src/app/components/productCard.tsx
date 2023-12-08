@@ -1,4 +1,6 @@
+'use client'
 import React from 'react';
+import { useRouter } from 'next/navigation'
 export interface Product {
     _id: string
     name: string;
@@ -13,12 +15,8 @@ export interface Product {
     updatedAt: string;
 }
 
-
-function formatRupiah(number:any) {
-    return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(number);
-}
-
 export default function productCard({ product }: { product: Product }) {
+    const navigate = useRouter()
     return (
       <>
             {/* <p className="text-xl text-center mt-16">No matching product</p> */}
@@ -29,7 +27,7 @@ export default function productCard({ product }: { product: Product }) {
                         src={product.thumbnail}
                         className="h-[200px] w-full object-contain transition-transform duration-500 group-hover:scale-110 sm:h-[50vh]"
                     />
-                    <div className="relative p-2">
+                    {/* <div className="relative p-2">
                         <h3
                         className="font-bold text-2xl text-gray-700 group-hover:underline group-hover:underline-offset-4"
                         >
@@ -43,8 +41,8 @@ export default function productCard({ product }: { product: Product }) {
                             {formatRupiah(Number(product.price))}
                         </p>
 
-                        </div>
-                    </div>
+                        </div> */}
+                    {/* </div> */}
                 </div>
                 {/* GadgetCard */}
 
