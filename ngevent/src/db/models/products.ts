@@ -1,6 +1,6 @@
 import {ObjectId} from 'mongodb'
 import { getMongoClientInstance  } from "../config";
-import { hashText } from '../helpers/hash';
+
 const DATABASE_NAME = 'ngevent'
 export const getDb = async()=>{
     const client = await getMongoClientInstance()
