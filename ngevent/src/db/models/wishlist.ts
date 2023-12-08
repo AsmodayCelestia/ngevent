@@ -31,3 +31,18 @@ export const getWishId = async (slug:string) =>{
         findOne({slug})) as Wish
     return wishBySlug
 }
+
+export const createWish = async (data:Wish) =>{
+    const db = await getDb()
+    // const modifiedUser: Wish= {
+    //     ...data,
+    //     name: data.username,
+    //     password: hashText(data.password)
+    // }
+    // console.log(modifiedUser);
+    
+    const wish = await db.
+        collection('wishlists').
+        insertOne(data) 
+    return wish
+}

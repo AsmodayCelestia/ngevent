@@ -1,53 +1,66 @@
-export default function Wishlist() {
-    return (
-      <>
-                    <div className="mt-8 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 md:gap-4 lg:grid-cols-3 justify-items-center">
-                {/* <GadgetCard /> */}
-                <div
-                    className="shadow-lg border border-[#DAFFFB] bg-white rounded-lg flex items-start cursor-pointer mb-10"
-                >
-                    {/* <router-link
-                    :to="`/gadget/${gadget.id}`"
-                    id="gadget"
-                    className="group block overflow-hidden rounded-xl"
-                    > */}
-                    <img
-                        alt="Gadget"
-                        src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-pink?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1692923780378"
-                        className="h-[200px] w-full object-contain transition-transform duration-500 group-hover:scale-110 sm:h-[300px]"
-                    />
+'use client'
+import WishCard, { Wish } from '../components/productCard'
+import { useEffect } from 'react'
+import { useState } from 'react'
+import Link from 'next/link'
 
-                    <div className="relative p-5">
-                        <h3
-                        className="font-bold text-2xl text-gray-700 group-hover:underline group-hover:underline-offset-4"
+export default function Products(){
+    const [products, setProducts] = useState<Product[]>([])
+    useEffect(()=>{
+        async function getProducts(){
+            const response = await fetch ('http://localhost:3000/api/products',{
+                method: "GET",
+                cache: 'no-store'
+            })
+            const {data} = await response.json() as {
+                statusCode: number;
+                message: string;
+                data: Product[];
+            }
+            setProducts(data)
+        }
+        getProducts()
+        JSON.stringify(products)
+    }, [])
+    
+    return (
+        <>
+            <div className="max-w-[2000px] gap-8 flex items-center">
+            <h2 className="text-3xl font-bold sm:text-4xl text-[#176B87]">Products</h2>
+                {/* <SearchBar /> */}
+                <form className=" mt-7 w-full border-2 rounded ">
+                    <div className="flex">
+                    <div className="relative h-[45px] w-full">
+                        <input
+                        className="w-full h-full p-4"
+                        type="search"
+                        id="search-dropdown"
+                        placeholder="Search by name"
+                        />
+                        <button
+                        type="submit"
+                        className="absolute top-0 right-0 px-4 text-sm font-medium h-full text-white bg-[#176B87] hover:opacity-60 transition-opacity duration-100 rounded-r-lg hover:bg-[#04364A]"
                         >
-                        {/* {{ gadget.name }} */}
-                        </h3>
-                        {/* <span
-                        className="inline-block bg-[#176B87] rounded-full px-3 py-1 text-sm font-semibold text-slate-100 mr-2 mb-2 mt-2"
-                        >
-                        #&nbsp;{{ gadget.type }}
-                        </span> */}
-                        <div id="description">
-                        <p className="text-md my-4 text-justify">
-                            {/* {{ gadget.description }} */}
-                            </p>
-                        </div>
-                        {/* <p>
-                        <span className="tracking-wider text-xl font-bold"> Start Fr. </span>
-                        </p>
-                        <p className="my-1">
-                    
-                        <span className="tracking-wider text-xl font-bold">
-                        {{formattedPrice(gadget.price) }}
-                        </span>
-                        </p> */}
+                        <i className="fa-solid fa-magnifying-glass"></i>
+                        <span className="sr-only">Search</span>
+                        </button>
                     </div>
-                    {/* </router-link> */}
-                </div>
-                {/* GadgetCard */}
+                    </div>
+                </form>
+                {/* search */} 
             </div>
-      </>
+            <div className="max-w-screen-xl px-4 sm:px-6 lg:px-8 mx-auto">
+                <div className="mt-3 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 md:gap-4 lg:grid-cols-3 justify-items-center">
+                    {products.map(product =>{
+                        return ( 
+                        <Link href={`/products/${product.slug}`}>
+                            <ProductCard key={product.slug} product={product}/>
+                        </Link>
+                        )
+                    })}
+                </div>
+            </div>
+            {/* <p className="text-xl text-center mt-16">No matching product</p> */}
+        </>
     )
 }
-
