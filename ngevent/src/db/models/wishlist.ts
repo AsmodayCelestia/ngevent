@@ -24,11 +24,10 @@ export const getAllWish = async () =>{
     return wishes
 }
 
-// export const getProductId = async (slug:string) =>{
-//     const db = await getDb()
-//     // const objectId = new ObjectId(id)
-//     const userById = (await db.
-//         collection('products').
-//         findOne({slug})) as Product
-//     return userById
-// }
+export const getWishId = async (slug:string) =>{
+    const db = await getDb()
+    const wishBySlug = (await db.
+        collection('wishlists').
+        findOne({slug})) as Wish
+    return wishBySlug
+}
