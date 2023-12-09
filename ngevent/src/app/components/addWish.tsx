@@ -7,7 +7,7 @@ export default function AddWish({ product }: { product: Product }) {
 
   const handleBookmarkClick = async (productId: string) => {
     const response = await fetch(
-      `http://localhost:3000/api/wishlists/${productId}`,
+      `https://vercel.com/herus-projects/ngevent/api/wishlists/${productId}`,
       {
         method: "POST",
       }

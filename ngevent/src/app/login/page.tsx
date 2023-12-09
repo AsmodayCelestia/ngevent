@@ -18,7 +18,7 @@ export default function Login() {
     // console.log(email, password);
     
     const response= await fetch(
-      "http://localhost:3000/api/users/login",
+      "https://vercel.com/herus-projects/ngevent/api/users/login",
       {
         method: "POST",
         headers: {

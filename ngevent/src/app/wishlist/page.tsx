@@ -9,7 +9,7 @@ export default function WishLists(){
     const [wishlists, setWishLists] = useState<Wish[]>([])
     useEffect(()=>{
         async function getWishLists(){
-            const response = await fetch ('http://localhost:3000/api/wishlists',{
+            const response = await fetch ('https://vercel.com/herus-projects/ngevent/api/wishlists',{
                 method: "GET",
                 cache: 'no-store'
             })
@@ -55,9 +55,9 @@ export default function WishLists(){
                     {wishlists.map(wishlist =>{
                         return ( 
                             <div key={wishlist._id.toString()}>
-                        <Link href={`/wishlists`}>
-                            <WishCard  wishlist={wishlist}/>
-                        </Link>
+                                <Link href={`/wishlists`}>
+                                    <WishCard  wishlist={wishlist}/>
+                                </Link>
                             </div>
                         )
                     })}
