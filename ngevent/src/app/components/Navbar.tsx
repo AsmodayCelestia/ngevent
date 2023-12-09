@@ -1,4 +1,6 @@
+"use client"
 import Link from 'next/link'
+import LogoutAction from "@/action/auth"
 export default function navbar(){
     return(
         <>
@@ -44,7 +46,10 @@ export default function navbar(){
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Logout</a>
+                    <button onClick={()=>{LogoutAction()}} className='btn text-red-500'>
+                        Logout
+                    </button>
+                    {/* <a className="btn">Logout</a> */}
                 </div>
             </div>
         </>

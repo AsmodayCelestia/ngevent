@@ -78,16 +78,16 @@ Implementasikan CSR dan SSR pada pada halaman-halaman dan komponen-komponen yang
 
 - [ ] Install MongoDB database pada komputer kamu atau menggunakan MongoDB Atlas
 - [ ] Lakukan wiring dan validasi terhadap halaman-halaman dan komponen-komponen yang sudah dibuat.
-  - [ ] Halaman register: /register
+  - [x] Halaman register: /register
     - [x] username:string (validation: required, unique)
     - [x] email:string  (validation: required, unique, email format)
     - [x] password:string  (validation: required, length min 5)
-  - [ ] Halaman login: /login
-    - [ ] email:string  (validation: required, email format)
-    - [ ] password:string  (validation: required)
+  - [x] Halaman login: /login
+    - [x] email:string  (validation: required, email format)
+    - [x] password:string  (validation: required)
   - [ ] Halaman home: / (SSR)
-    - [ ] Halaman product: /products
-    - [ ] Fitur List Product
+    - [x] Halaman product: /products
+    - [x] Fitur List Product
     - [ ] Fitur Search
     - [ ] Fitur Pagination
     - [ ] Untuk menerapakan infinite scroll salah satu package yang bisa digunakan: react-infinite-scroll

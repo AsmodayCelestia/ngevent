@@ -4,6 +4,6 @@ export const hashText = (text:string): string =>{
 }
 
 export const comparePass = (text:string, hash:string): boolean =>{
-    console.log(text, hash);
+    // console.log(text, hash);
     return bcryptjs.compareSync(text, hash)
 }

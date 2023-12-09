@@ -15,7 +15,7 @@ const User = z.object({
 export async function POST(request: Request) {
     try {
         const body: {email: string, password:string} = await request.json()
-        console.log(body);
+        // console.log(body);
         
         const validation = User.safeParse(body)
 
@@ -25,7 +25,7 @@ export async function POST(request: Request) {
         }
 
         const user = await getUserEmail(body.email)
-        console.log(user);
+        // console.log(user);
         
         if(!user){
             return NextResponse.json(
@@ -36,10 +36,10 @@ export async function POST(request: Request) {
                 {status: 401}
             )
         }
-        console.log(user);
+        // console.log(user);
         
         const isValid = comparePass(body.password, user.password )
-        console.log(isValid);
+        // console.log(isValid);
         
         if(!isValid){
             return NextResponse.json(
@@ -55,14 +55,16 @@ export async function POST(request: Request) {
             _id: user._id,
             email: user.email
         })
-        console.log(accessToken);
-        
-        return NextResponse.json({
-            message: "Login Success",
-            data: {accessToken}
-        }, {
-            status: 201
-        })
+        // console.log(accessToken);
+        const response = NextResponse.json(
+            {
+                message: "Login Success",
+                data: {accessToken}
+            }, {
+                status: 201
+            })
+            response.cookies.set("Authorization", `Bearer ${accessToken}`)
+        return response
     } catch (error) {
         console.log(error);
         

@@ -6,21 +6,35 @@ import Link from 'next/link'
 
 export default function Products(){
     const [products, setProducts] = useState<Product[]>([])
-    useEffect(()=>{
-        async function getProducts(){
-            const response = await fetch ('http://localhost:3000/api/products',{
-                method: "GET",
-                cache: 'no-store'
-            })
-            const {data} = await response.json() as {
-                statusCode: number;
-                message: string;
-                data: Product[];
+    useEffect(() => {
+        async function getProducts() {
+            try {
+                const response = await fetch('http://localhost:3000/api/products', {
+                    method: 'GET',
+                    cache: 'no-store',
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch data: ${response.statusText}`);
+                }
+
+                const { data } = await response.json() as {
+                    statusCode: number;
+                    message: string;
+                    data: Product[];
+                };
+
+                setProducts(data);
+            } catch (error) {
+                console.error('Error fetching products:', error);
+                // Handle error state or display an error message
             }
-            setProducts(data)
         }
-        getProducts()
-        JSON.stringify(products)
+        getProducts();
+
     }, [])
     
     return (

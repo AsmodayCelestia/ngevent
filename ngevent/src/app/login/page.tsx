@@ -2,6 +2,8 @@ import { redirect } from "next/navigation"
 import Link from "next/link"
 import ClientFlashComponent from "../components/ClientFlashComponent";
 // import { MyResponse } from "../register/page";
+import {cookies} from 'next/headers'
+import { access } from "fs";
 
 export type MyResponse<T = {}> =  {
   message?: string;
@@ -13,7 +15,7 @@ export default function Login() {
     "use server"
     const email = formData.get("email")
     const password = formData.get("password")
-    console.log(email, password);
+    // console.log(email, password);
     
     const response= await fetch(
       "http://localhost:3000/api/users/login",
@@ -29,11 +31,18 @@ export default function Login() {
       }
     )
     
-    const result =(await response.json() ) as MyResponse
+    const result =(await response.json() ) as MyResponse<{
+      accessToken: string
+    }>
     
     if(!response.ok) {
       return redirect('/login?error=' + result.message)
     }
+
+    // console.log(result, "<<<<result");
+    
+    if(result.data) cookies().set("Authorization", `Bearer ${result.data.accessToken}`)
+
     return redirect('/')
   }
     return (
