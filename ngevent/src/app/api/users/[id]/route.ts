@@ -1,4 +1,5 @@
 import { getUserId } from "@/db/models/users"
+import { NextResponse } from "next/server"
 
 export async function GET(
     request: Request,
@@ -6,7 +7,7 @@ export async function GET(
   ) {
     const id = params.id // 'a', 'b', or 'c'
     const userById = await getUserId(id)
-    return Response.json({
+    return NextResponse.json({
         statusCode: 200,
         message: `Message from /api/users/${id}`,
         data: userById

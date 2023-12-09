@@ -1,26 +1,27 @@
 'use client'
-import WishCard, { Wish } from '../components/productCard'
+import ProductCard, { Product } from '../components/productCard'
+import WishCard, { Wish } from '../components/wishCard'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import Link from 'next/link'
 
-export default function Products(){
-    const [products, setProducts] = useState<Product[]>([])
+export default function WishLists(){
+    const [wishlists, setWishLists] = useState<Wish[]>([])
     useEffect(()=>{
-        async function getProducts(){
-            const response = await fetch ('http://localhost:3000/api/products',{
+        async function getWishLists(){
+            const response = await fetch ('http://localhost:3000/api/wishlists',{
                 method: "GET",
                 cache: 'no-store'
             })
             const {data} = await response.json() as {
                 statusCode: number;
                 message: string;
-                data: Product[];
+                data: Wish[];
             }
-            setProducts(data)
+            setWishLists(data)
         }
-        getProducts()
-        JSON.stringify(products)
+        getWishLists()
+        JSON.stringify(wishlists)
     }, [])
     
     return (
@@ -51,10 +52,10 @@ export default function Products(){
             </div>
             <div className="max-w-screen-xl px-4 sm:px-6 lg:px-8 mx-auto">
                 <div className="mt-3 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 md:gap-4 lg:grid-cols-3 justify-items-center">
-                    {products.map(product =>{
+                    {wishlists.map(wishlist =>{
                         return ( 
-                        <Link href={`/products/${product.slug}`}>
-                            <ProductCard key={product.slug} product={product}/>
+                        <Link href={`/wishlists`}>
+                            <WishCard key={wishlist._id} wishlist={wishlist}/>
                         </Link>
                         )
                     })}

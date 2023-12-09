@@ -9,7 +9,7 @@ export interface Wish {
     updatedAt: string;
 }
 
-export default function wishCard({ wish }: { wish: Wish }) {
+export default function WishCard({ wishlist }: { wishlist: Wish }) {
     const navigate = useRouter()
     return (
       <>

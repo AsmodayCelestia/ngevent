@@ -15,6 +15,12 @@ type Props = {
     params: { slug: string }
 }
 
+const handleBookmarkClick = async (productId: string) => {
+    const response= await fetch( `http://localhost:3000/api/wishlists/${productId}`,{
+        method: "POST"
+    })
+};
+
 function formatRupiah(number:any) {
     return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(number);
 }

@@ -1,5 +1,4 @@
 import { Metadata, ResolvingMetadata } from "next"
-
 import Head from "next/head"
 import ProductCard, { Product } from '../../components/productCard'
 
@@ -11,11 +10,11 @@ export async function generateMetadata(
         const slug = params.slug
         
         // fetch data
-        // const product = await fetch(`https://.../${slug}`).then((res) => res.json())
+        const product = await fetch(`http://localhost:3000/api/products/${slug}`).then((res) => res.json())
         
         return {
-            title: "data dari product <product.name>",
-            description: "data dari product <product.description>"
+            title:  `${product.excerpt}`,
+            description: `${product.name}`
         }
     }
     

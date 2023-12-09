@@ -1,5 +1,7 @@
 import {ObjectId} from 'mongodb'
 import { getMongoClientInstance  } from "../config";
+import { cookies } from 'next/headers';
+
 const DATABASE_NAME = 'ngevent'
 export const getDb = async()=>{
     const client = await getMongoClientInstance()
@@ -18,7 +20,7 @@ export type Wish = {
 export const getAllWish = async () =>{
     const db = await getDb()
     const wishes = (await db.
-        collection('products').
+        collection('wishlists').
         find().
         toArray()) as Wish[]
     return wishes
@@ -32,17 +34,24 @@ export const getWishId = async (slug:string) =>{
     return wishBySlug
 }
 
-export const createWish = async (data:Wish) =>{
+export const createWish = async (data:Wish, request:Request) =>{
+    const {url} = request
+    const segment = url.split('/')[5]
+    console.log(segment);
+    
+    
     const db = await getDb()
     const modifiedWish: Wish= {
         ...data,
-        // name: data.username,
-        // password: hashText(data.password)
+        getUserId: request.headers.get("x-user-id") as any ,
+        productId : segment as string | any,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
     }
     console.log(modifiedWish);
     
     const wish = await db.
         collection('wishlists').
-        insertOne(data) 
+        insertOne(modifiedWish) 
     return wish
 }

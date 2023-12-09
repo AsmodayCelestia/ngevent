@@ -64,6 +64,7 @@ export async function POST(request: Request) {
                 status: 201
             })
             response.cookies.set("Authorization", `Bearer ${accessToken}`)
+            console.log(request.headers.get("x-user-id"), "ini user")
         return response
     } catch (error) {
         console.log(error);

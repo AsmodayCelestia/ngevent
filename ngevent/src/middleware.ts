@@ -6,10 +6,10 @@ import { readPayloadJose } from './lib/jwt';
  
 // This function can be marked `async` if using `await` inside
 export async function middleware(request: NextRequest) {
-  console.log(request.url, "<<<<middleware");
+  // console.log(request.url, "<<<<middleware");
   if(request.url.includes("api/products")){
     const authorization =  cookies().get("Authorization")
-    console.log(authorization);
+    console.log(authorization, "middleware auth");
     
     if(!authorization){
         return NextResponse.json(
@@ -20,8 +20,39 @@ export async function middleware(request: NextRequest) {
         )
     }
     const accessToken = authorization.value.split(" ")[1]
+    
+    
     const decodedUser = readPayloadJose<{ _id: string, email: string }>(accessToken)
-    // console.log(decodeUser);
+    // console.log(decodedUser);
+    const requestHeaders = new Headers(request.headers)
+    requestHeaders.set("x-user-id", (await decodedUser)._id)
+    requestHeaders.set("x-user-email", (await decodedUser).email)
+    
+    const response = NextResponse.next({
+      request: {
+        headers: requestHeaders
+      }
+    })
+    return response
+  }
+
+  if(!request.url.includes("api/users/login")){
+    const authorization =  cookies().get("Authorization")
+    // console.log(authorization, "middleware auth");
+    
+    if(!authorization){
+        return NextResponse.json(
+            {
+                message: "Authentication Failed"
+            },
+            {status:401}
+        )
+    }
+    const accessToken = authorization.value.split(" ")[1]
+    
+    
+    const decodedUser = readPayloadJose<{ _id: string, email: string }>(accessToken)
+    // console.log(decodedUser);
     const requestHeaders = new Headers(request.headers)
     requestHeaders.set("x-user-id", (await decodedUser)._id)
     requestHeaders.set("x-user-email", (await decodedUser).email)
