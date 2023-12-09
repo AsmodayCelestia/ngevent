@@ -67,9 +67,11 @@ export default function Products(){
                 <div className="mt-3 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 md:gap-4 lg:grid-cols-3 justify-items-center">
                     {products.map(product =>{
                         return ( 
+                            <div key={product.slug}>
                         <Link href={`/products/${product.slug}`}>
-                            <ProductCard key={product.slug} product={product}/>
+                                <ProductCard product={product}/>
                         </Link>
+                            </div>
                         )
                     })}
                 </div>

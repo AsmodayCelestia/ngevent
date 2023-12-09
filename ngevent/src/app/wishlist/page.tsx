@@ -22,7 +22,7 @@ export default function WishLists(){
         }
         getWishLists()
         JSON.stringify(wishlists)
-    }, [])
+    }, [wishlists])
     
     return (
         <>
@@ -54,9 +54,11 @@ export default function WishLists(){
                 <div className="mt-3 grid grid-cols-1 gap-6 md:mt-16 md:grid-cols-2 md:gap-4 lg:grid-cols-3 justify-items-center">
                     {wishlists.map(wishlist =>{
                         return ( 
+                            <div key={wishlist._id.toString()}>
                         <Link href={`/wishlists`}>
-                            <WishCard key={wishlist._id} wishlist={wishlist}/>
+                            <WishCard  wishlist={wishlist}/>
                         </Link>
+                            </div>
                         )
                     })}
                 </div>
