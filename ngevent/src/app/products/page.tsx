@@ -68,9 +68,9 @@ export default function Products(){
                     {products.map(product =>{
                         return ( 
                             <div key={product.slug}>
-                        <Link href={`/products/${product.slug}`}>
-                                <ProductCard product={product}/>
-                        </Link>
+                                <Link href={`/products/${product.slug}`}>
+                                        <ProductCard product={product}/>
+                                </Link>
                             </div>
                         )
                     })}
