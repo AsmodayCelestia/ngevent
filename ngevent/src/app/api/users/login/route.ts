@@ -19,6 +19,10 @@ export async function POST(request: Request) {
         
         const validation = User.safeParse(body)
 
+        console.log(validation)
+
+
+    
         
         if(!validation.success){
             throw validation.error
@@ -26,6 +30,8 @@ export async function POST(request: Request) {
 
         const user = await getUserEmail(body.email)
         // console.log(user);
+
+        console.log(user)
         
         if(!user){
             return NextResponse.json(

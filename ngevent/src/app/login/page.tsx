@@ -17,19 +17,16 @@ export default function Login() {
     const password = formData.get("password");
     // console.log(email, password);
 
-    const response = await fetch(
-      "https://vercel.com/herus-projects/ngevent/api/users/login",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email,
-          password,
-        }),
-      }
-    );
+    const response = await fetch("http://vercel.com/herus-projects/ngevent-1vqn/api/api/users/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email,
+        password,
+      }),
+    });
 
     const result = (await response.json()) as MyResponse<{
       accessToken: string;

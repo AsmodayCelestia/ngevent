@@ -14,7 +14,7 @@ export default function Register() {
     const email = formData.get('email')
     const password = formData.get('password')
     const response= await fetch(
-      "https://vercel.com/herus-projects/ngevent/api/users/register",
+      "https://vercel.com/herus-projects/ngevent-1vqn/api/api/users/register",
       {
         method: "POST",
         headers: {
