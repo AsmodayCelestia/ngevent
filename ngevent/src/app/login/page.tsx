@@ -16,7 +16,7 @@ export default function Login() {
     const email = formData.get("email");
     const password = formData.get("password");
     // console.log(email, password);
-
+    // ubah
     const response = await fetch("https://vercel.com/herus-projects/ngevent-1vqn/api/api/users/login", {
       method: "POST",
       headers: {
