@@ -9,7 +9,7 @@ export default function Products(){
     useEffect(() => {
         async function getProducts() {
             try {
-                const response = await fetch('https://vercel.com/herus-projects/ngevent/api/products', {
+                const response = await fetch('https://ngevent.vercel.app/api/products', {
                     method: 'GET',
                     cache: 'no-store',
                     headers: {
