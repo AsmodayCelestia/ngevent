@@ -10,7 +10,7 @@ export async function generateMetadata(
         const slug = params.slug
         
         // fetch data
-        const product = await fetch(`https://ngevent-1vqn-4us5uo3sv-herus-projects.vercel.app/api/products/${slug}`).then((res) => res.json())
+        const product = await fetch(`https://vercel.com/herus-projects/ngevent/api/products/${slug}`).then((res) => res.json())
         
         return {
             title:  `${product.excerpt}`,
@@ -21,7 +21,7 @@ export async function generateMetadata(
 async function getDetail (slug:string): Promise<Product> {
     console.log(slug, "<<<<");
     
-    const response = await fetch(`https://ngevent-1vqn-4us5uo3sv-herus-projects.vercel.app/api/products/${slug}`)
+    const response = await fetch(`https://vercel.com/herus-projects/ngevent/api/products/${slug}`)
     const {data} = await response.json();
     console.log(data);
     
