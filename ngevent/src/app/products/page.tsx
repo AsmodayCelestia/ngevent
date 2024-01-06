@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 export default function Products(){
     const [products, setProducts] = useState<Product[]>([])
+    "use server";
     useEffect(() => {
         async function getProducts() {
             try {
