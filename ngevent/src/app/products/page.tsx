@@ -1,7 +1,7 @@
 import ProductCard, { Product } from '../components/productCard';
 import Link from 'next/link';
 
-function Products({ products = [] }: { products: Product[] }) {
+function getProducts({ products = [] }: { products: Product[] }) {
     // Check if products is undefined or not an array
     if (!products || !Array.isArray(products)) {
         return (
@@ -50,7 +50,7 @@ function Products({ products = [] }: { products: Product[] }) {
     );
 }
 
-export async function getProducts() {
+export async function Products() {
     try {
         const response = await fetch('https://ngevent.vercel.app/api/products', {
             method: 'GET',
@@ -85,5 +85,5 @@ export async function getProducts() {
     }
 }
 
-export default Products;
+export default getProducts;
 //gabut
