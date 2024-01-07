@@ -9,7 +9,7 @@ export default function WishLists(){
     const [wishlists, setWishLists] = useState<Wish[]>([])
     useEffect(()=>{
         async function getWishLists(){
-            const response = await fetch ('http://localhost:3000/ngevent/api/wishlists',{
+            const response = await fetch ('https://vercel.com/herus-projects/ngevent/api/wishlists',{
                 method: "GET",
                 cache: 'no-store'
             })

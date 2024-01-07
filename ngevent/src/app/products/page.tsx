@@ -11,7 +11,7 @@ export default function Products(){
         async function getProducts() {
             try {
                 "use server"
-                const response = await fetch('https://ngevent.vercel.app/api/products', {
+                const response = await fetch('https://vercel.com/herus-projects/ngevent/api/products', {
                     method: 'GET',
                     cache: 'no-store',
                     headers: {

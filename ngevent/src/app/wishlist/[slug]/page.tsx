@@ -5,7 +5,7 @@ import ProductCard, { Product } from '../../components/productCard'
 async function getDetail (slug:string): Promise<Product> {
     console.log(slug, "<<<<");
     
-    const response = await fetch(`https://ngevent.vercel.app/api/wishlists/${slug}`)
+    const response = await fetch(`https://vercel.com/herus-projects/ngevent/api/wishlists/${slug}`)
     const {data} = await response.json();
     console.log(data);
     
@@ -16,7 +16,7 @@ type Props = {
 }
 
 const handleBookmarkClick = async (productId: string) => {
-    const response= await fetch( `https://ngevent.vercel.app/api/wishlists/${productId}`,{
+    const response= await fetch( `https://vercel.com/herus-projects/ngevent/api/wishlists/${productId}`,{
         method: "POST"
     })
 };
