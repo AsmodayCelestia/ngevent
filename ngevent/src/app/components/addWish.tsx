@@ -6,6 +6,8 @@ export default function AddWish({ product }: { product: Product }) {
   const [wishlist, setWishlist] = useState<string[]>([]);
 
   const handleBookmarkClick = async (productId: string) => {
+    console.log(productId);
+    
     const response = await fetch(
       `https://ngevent.vercel.app/api/wishlists/${productId}`,
       {

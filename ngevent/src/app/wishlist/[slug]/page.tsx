@@ -5,7 +5,7 @@ import ProductCard, { Product } from '../../components/productCard'
 async function getDetail (slug:string): Promise<Product> {
     console.log(slug, "<<<<");
     
-    const response = await fetch(`https://ngevent.vercel.app/api/products/${slug}`)
+    const response = await fetch(`https://ngevent.vercel.app/api/wishlists/${slug}`)
     const {data} = await response.json();
     console.log(data);
     

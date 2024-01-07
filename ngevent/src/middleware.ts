@@ -21,7 +21,7 @@ export async function middleware(request: NextRequest) {
       );
     }
 
-    const authorizationParts = authorizationCookie.split(" ");
+    const authorizationParts = authorizationCookie.value.split(" ");
     if (authorizationParts.length !== 2) {
       return NextResponse.json(
         {
