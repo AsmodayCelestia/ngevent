@@ -8,7 +8,7 @@ export async function middleware(request: NextRequest) {
 
   // Check if the request is for the products API
   if (request.url.includes("api/products")) {
-    const authorizationCookie = request.cookies?.get("Authorization") as string | undefined;
+    const authorizationCookie = request.cookies?.get("Authorization") as any | undefined;
     // Uncomment for debugging
     // console.log(authorizationCookie, "middleware auth");
 
