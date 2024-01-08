@@ -9,7 +9,7 @@ export default function AddWish({ product }: { product: Product }) {
     console.log(productId);
     
     const response = await fetch(
-      `https://vercel.com/herus-projects/ngevent/api/wishlists/${productId}`,
+      `https://ngevent.vercel.app/api/wishlists/${productId}`,
       {
         method: "POST",
       }
