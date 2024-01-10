@@ -37,6 +37,7 @@ export async function middleware(request: NextRequest) {
     const requestHeaders = new Headers(request.headers);
     requestHeaders.set("x-user-id", (await decodedUser)._id);
     requestHeaders.set("x-user-email", (await decodedUser).email);
+    requestHeaders.set("Access-Control-Allow-Origin", "*");
 
     const response = NextResponse.next({
       request: {
