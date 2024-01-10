@@ -14,8 +14,9 @@ export default function Products(){
                 const response = await fetch('https://ngevent.vercel.app/api/products', {
                     method: 'GET',
                     cache: 'no-store',
-                    headers: {
-                        "Content-Type": "application/json"
+                    headers: { 
+                        "Content-Type": "application/json",
+                        'Access-Control-Allow-Origin': '*',
                     }
                 });
 

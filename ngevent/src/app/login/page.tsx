@@ -82,7 +82,7 @@ export default function Login() {
                     name="password"
                     type="password"
                     id="password"
-                    placeholder="••••••••"
+                    placeholder="â¢â¢â¢â¢â¢â¢â¢â¢"
                     className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                     autoComplete="off"
                     v-model="register.password"
@@ -95,7 +95,7 @@ export default function Login() {
                   Sign in
                 </button>
                 <p className="text-sm font-light text-gray-500">
-                  Don’t have an account yet?
+                  Donât have an account yet?
                   <a className="font-medium text-primary-600 hover:underline">
                     Sign up
                   </a>

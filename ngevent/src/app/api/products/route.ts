@@ -11,7 +11,11 @@ export async function GET(request: Request) {
         statusCode: 200,
         message: "message from /api/users",
         data: products
-    }, {
-        status: 200
+    }, 
+    {
+        status: 200,
+        headers: {
+            'Access-Control-Allow-Origin': '*', // Allow requests from any origin
+        },
     })
 }
